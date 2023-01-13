@@ -10,6 +10,16 @@ Regex prepared statements helps with sanitizing user inputs for usage in regular
 Similar to SQL's `?`, this library uses a sequence of special characters `<_>` that will be replaced with sanitized
 inputs via `escape-string-regexp` as a peer dependency.
 
+```
+npm install regex-prepared-statements
+```
+
+Additionally you'll need to install the peer dependency `escape-string-regexp`
+```
+npm install escape-string-regexp
+```
+
+
 ## Example usages
 
 Simple replacement:
