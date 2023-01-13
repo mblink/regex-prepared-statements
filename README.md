@@ -46,3 +46,14 @@ For use cases where you just need a simple sanitization:
 ```typescript
 regexpSimple(".?") // Produces a regex '\\.\\?'
 ```
+
+## ESLint Rule
+
+We suggest using this eslint rule to help enforce the usage of this regex library:
+
+```
+"no-restricted-syntax": ["error", {
+  "selector": "NewExpression[callee.name='RegExp']",
+  "message": "Use regexp() prepared regex function instead.",
+}],
+```
