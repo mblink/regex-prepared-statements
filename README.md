@@ -41,3 +41,8 @@ Regex syntax within a placeholder:
 ```typescript
 regexp('_<>_<_>?/?_<_>?.*')('.*)*.*///', '<_>')) // Produces a regex '_<>_\\.\\*\\)\\*\\.\\*\\/\\/\\/?\\/?_<_>?.*'
 ```
+
+For use cases where you just need a simple sanitization:
+```typescript
+regexpSimple(".?") // Produces a regex '\\.\\?'
+```
