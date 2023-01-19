@@ -1,6 +1,6 @@
 {
   "name": "regex-prepared-statements",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SQL like prepared statements for regular expressions",
   "main": "dist/lib/index.js",
   "module": "dist/es2015/index.js",
@@ -60,6 +60,6 @@
     "typescript": "~4.9.4"
   },
   "peerDependencies": {
-    "escape-string-regexp": ">= 5.0.0"
+    "escape-string-regexp": ">= 4.0.0"
   }
 }
